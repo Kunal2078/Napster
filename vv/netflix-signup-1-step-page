@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link class="netflix-icon" rel="icon" href="netflixicon.png" />
+
+    <title>Netflix</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="navigation-bar">
+
+    <div class="netflix-logo">
+      <a href="Home.html" >
+
+        <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" width="180px;" height="60px">
+
+    </a>
+    <div>
+      <a href="Sign IN.html" class="sign-in">Sign In</a>
+    </div>
+  </div>
+
+</div>
+<hr>
+<div class="container-fluid">
+<div class="card1">
+ 
+    <div class="steplogo-container">
+    </div>
+    <div class="steplogotext">
+Step 1 of 3
+    </div>
+    <div class="sometext">
+      Finish setting up your
+      <br>account
+    </div>
+    <div class="sometext2">
+      Netflix is personalised for you.
+      <br>Create a password to watch on any <br>
+      device at any time.
+    </div>
+    <div class="next-btn-container">
+    <a href="#"> <input type="button" name="next" value="Next" class="next-btn"></a>
+
+    </div>
+  </div>
+
+</div>
+
+  </body>
+</html>
