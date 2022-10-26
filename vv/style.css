@@ -151,7 +151,7 @@ background: transparent;
   background: #fff;
   object-fit: cover;
   backdrop-filter: opactiy(0.1);
-  animation: card-loading 10s linear;
+  animation: card-loading 5s linear;
 }
 .image-container > img {
   width: 100%;
@@ -162,7 +162,7 @@ background: transparent;
   border: 0ch;
   border: none !important;
   border-radius: 0%;
-  animation: imagefade 10s ease-in-out;
+  animation: imagefade 5s ease-in-out;
 }
 
 #card {
@@ -177,7 +177,7 @@ h5 {
   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 10px;
   margin: 0%;
-  animation: fading 10s ease-in-out;
+  animation: fading 5s ease-in-out;
 }
 
 h2 {
@@ -360,12 +360,12 @@ h2 {
     flex-direction: column;
   }
   .image-container > img {
-    animation: imagefade 10s ease-in-out ;
+    animation: imagefade 5s ease-in-out ;
   }
   h5 {
     font-size: 0.9rem !important;
     margin: 0%;
-    animation: fading 10s ease-in-out ;
+    animation: fading 5s ease-in-out ;
   }
   .slider{
     padding-left: 20px !important;
@@ -391,7 +391,7 @@ h2 {
     font-size: 1rem !important;
     width: 37vw;
     margin-left: 35px;
-    animation: shine 10s ease-in-out forwards;
+    animation: shine 5s ease-in-out forwards;
   }
   @keyframes loading {
     0% {
@@ -531,7 +531,7 @@ h2 {
   animation: loading 5s;
 }
 h2 {
-  animation: shine 10s ease-in-out;
+  animation: shine 5s ease-in-out;
 }
 @keyframes loading {
   0% {
