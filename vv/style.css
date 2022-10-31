@@ -43,78 +43,44 @@ background: transparent;
     background: transparent;
      
 } */
-#trailers-container {
-  position: absolute;
-  padding: 0%;
-  object-fit: fill;
-  margin: 0;
+.carousel{
+  z-index: 10;
+  top:43px;
+  height: 68vh;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  animation: carousel 3s step-end forwards ;
 }
 
-.video-player {
+@keyframes carousel {
+  0%{
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  100%{
+    display: flex;
+    
+  }
+  
+}
+.carousel-inner{
+  width: 93% !important;
+}
+.carousel-indicators{
+  margin-bottom: -1rem !important;
+}
+.carousel-item>img{
+  object-fit: cover;
+  height: 75vh;
   aspect-ratio: 16/9;
-  width: 1380px !important;
-  position: absolute;
-
-  overflow: hidden;
+  width:50%;
+  filter: brightness(0.8);
 }
 
-#trailers-information {
-  width: 546px;
-  height: 561px;
-  position: relative;
-  display: flex;
-  margin: auto;
-  margin-left: 100px;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: aliceblue;
-}
 
-#trailer-name span {
-  font-weight: bold;
-  font-size: 5rem;
-}
-
-.btn-container {
-  display: flex;
-  position: relative;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  background: transparent;
-}
-
-.play-btn {
-  width: 126px;
-  height: 46px;
-  background-color: aliceblue;
-  color: #131212;
-  border: none;
-  margin: 0 20px 0 0;
-  border-radius: 7px;
-  font-weight: 800;
-  size: 18.432px;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.more-info-btn {
-  width: 172px;
-  height: 46px;
-  border: none;
-  background-color: rgba(123, 123, 123, 0.782);
-  color: aliceblue;
-  border-radius: 7px;
-  font-weight: 800;
-  size: 18.432px;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
 
 #container-fluid {
   display: flex;
@@ -127,6 +93,7 @@ background: transparent;
   background: transparent;
   border: none;
 }
+
 
 .slider {
   --slider-index: 0;
@@ -151,7 +118,12 @@ background: transparent;
   background: #fff;
   object-fit: cover;
   backdrop-filter: opactiy(0.1);
-  animation: card-loading 5s linear;
+  animation: card-loading 3s linear;
+}
+.card:hover{
+  transform: scale(1.2);
+  transition: scale 50ms ease;
+  z-index: 1;
 }
 .image-container > img {
   width: 100%;
@@ -162,9 +134,11 @@ background: transparent;
   border: 0ch;
   border: none !important;
   border-radius: 0%;
-  animation: imagefade 5s ease-in-out;
+  animation: imagefade 3s ease-in-out;
 }
-
+.image-container>img:hover{
+  filter: brightness(0.50);
+}
 #card {
   background-color: rgb(20, 20, 20);
   flex: 0 0 20%;
@@ -177,7 +151,7 @@ h5 {
   font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 10px;
   margin: 0%;
-  animation: fading 5s ease-in-out;
+  animation: fading 3s ease-in-out;
 }
 
 h2 {
@@ -192,7 +166,7 @@ h2 {
   position: relative;
 
   padding-top: 50px;
-  margin-top: 20px;
+  margin-top: 35px;
   overflow: hidden;
 }
 
@@ -294,7 +268,7 @@ h2 {
   letter-spacing: 2px;
   outline: none;
   border-radius: 25px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: transparent;
   padding-right: 40px;
   color: #fff;
@@ -349,8 +323,22 @@ h2 {
     height: 32px;
   }
  
-  #trailers-information {
-    margin-left: 0;
+  .carousel{
+  
+    top:43px;
+    height: 20vh;
+
+  }
+
+  
+  .carousel-indicators [data-bs-target] {
+    height: 1px !important;
+    width: 15px !important;
+ }
+  .carousel-item>img{
+ 
+    height: 23vh;
+  
   }
 
   #card {
@@ -360,12 +348,12 @@ h2 {
     flex-direction: column;
   }
   .image-container > img {
-    animation: imagefade 5s ease-in-out ;
+    animation: imagefade 3s ease-in-out ;
   }
   h5 {
     font-size: 0.9rem !important;
     margin: 0%;
-    animation: fading 5s ease-in-out ;
+    animation: fading 3s ease-in-out ;
   }
   .slider{
     padding-left: 20px !important;
@@ -385,13 +373,13 @@ h2 {
     display: none;
   }
   .container1 {
-    animation: loading 5s;
+    animation: loading 3s;
   }
   h2 {
     font-size: 1rem !important;
     width: 37vw;
     margin-left: 35px;
-    animation: shine 5s ease-in-out forwards;
+    animation: shine 3s ease-in-out forwards;
   }
   @keyframes loading {
     0% {
@@ -528,10 +516,10 @@ h2 {
   }
 }
 .container1 {
-  animation: loading 5s;
+  animation: loading 3s;
 }
 h2 {
-  animation: shine 5s ease-in-out;
+  animation: shine 3s ease-in-out;
 }
 @keyframes loading {
   0% {
